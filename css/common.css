@@ -1,5 +1,7 @@
+/*font-family: 'Montserrat', sans-serif;*/
+
 .structure {
-    padding: 70px 10%;
+    padding: 130px 10%;
     box-sizing: border-box;
     text-align: center;
 }
@@ -9,6 +11,46 @@
 }
 .black {
     background: #262b39;
+}
+
+
+.scroll_down {
+    position: absolute;
+    bottom: -164px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: min-content;
+    color: #fff;
+}
+.scroll_down span {
+    font-family: 'Montserrat', sans-serif;
+    white-space: nowrap;
+    /*transform: rotate(-90deg);*/
+    line-height: 22px;
+    font-size: 20px;
+    /*writing-mode: vertical-rl;*/
+    display: block;
+    margin-bottom: 21px;
+}
+.scroll_down img {
+    /*transform: rotate(-90deg);*/
+    width: 20px;
+    margin: 0 auto;
+    /*display: block;*/
+    animation: scrd 1.3s ease-in-out infinite;
+    display: inline-block;
+}
+
+@keyframes scrd {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 

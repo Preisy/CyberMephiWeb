@@ -1,10 +1,18 @@
-.home {
+.home_wrapper {
     padding-top: 100px;
+    overflow: hidden;
+}
+.home {
+    position: relative;
 }
 
 
 .home_background {
     position: absolute;
+    /*top: 500px;*/
+}
+.home_background img {
+    /*transition: all 0.5s ease-in-out;*/
 }
 
 
@@ -139,7 +147,11 @@
 }
 
 .home_text .sign_in {
-        margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.home_text .sign_up {
+    padding: 0 50px;
 }
 
 
