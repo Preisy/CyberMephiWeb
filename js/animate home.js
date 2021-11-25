@@ -44,7 +44,7 @@ let home_icon = document.body.querySelector(".home_text .icon")
 let icon_K = 0.2
 
 text_arr = document.querySelectorAll(".home_text div ~ *")
-let K_arr = [0.4, 0.3, 0.2, 0.1]
+let K_arr = [0.4, 0.3, 0.2, 0.15]
 let text_K = 0.5
 window.onscroll = function () {
     if (home.getBoundingClientRect().bottom < 0) {
