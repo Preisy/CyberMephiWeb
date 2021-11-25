@@ -40,6 +40,9 @@
     animation: scrd 1.3s ease-in-out infinite;
     display: inline-block;
 }
+.test {
+
+}
 
 @keyframes scrd {
     0% {
