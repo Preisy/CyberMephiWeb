@@ -159,10 +159,10 @@
     20% {
         transform: translateX(5px);
     }
-    45% {
+    55% {
         transform: translateX(-5px);
     }
-    65% {
+    75% {
         transform: translateX(3px);
     }
     85% {
