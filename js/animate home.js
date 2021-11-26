@@ -37,7 +37,7 @@ girl.start_top = 100
 girl.style.top = `${girl.start_top}px`
 let girl_K = 0.5
 
-let home_icon = document.body.querySelector(".home_text .icon")
+let home_icon = document.body.querySelector(".home_text .icon .wrapper_logo")
 // girl.start_top = 100
 // girl.style.top = `${el.start_top}px`
 // let K = 0.5
