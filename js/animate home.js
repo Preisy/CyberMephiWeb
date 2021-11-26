@@ -96,6 +96,6 @@ window.onmousemove = function (event) {
     if (value < 1) {
         value = 1
     }
-    console.log(r)
+    // console.log(r)
     girl.children[0].style.transform = `scale(${value})`
 }
