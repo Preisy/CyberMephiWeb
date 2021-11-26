@@ -25,6 +25,7 @@ function addEL(str) {
         })
     }
 }
+
 addEL(".home h1")
 addEL(".home p")
 
@@ -54,10 +55,10 @@ window.onscroll = function () {
     // el.getBoundingClientRect().top
     girl.style.top = `${girl.start_top + window.scrollY * girl_K}px`
 
-    home_icon.style.transform = `translateY(${-window.scrollY*icon_K}px)`
+    home_icon.style.transform = `translateY(${-window.scrollY * icon_K}px)`
 
     for (let i = 0; i < text_arr.length; i++) {
-        text_arr[i].style.transform = `translateX(${window.scrollY*text_K*K_arr[i]}px)`
+        text_arr[i].style.transform = `translateX(${window.scrollY * text_K * K_arr[i]}px)`
     }
     // home_icon.style.transform = `translateY(px)`
 }
@@ -80,8 +81,8 @@ window.onmousemove = function (event) {
     girl_center_coords[1] = (girl_client_rect.bottom - girl_client_rect.top) / 2 + girl_client_rect.top
 
     let offset = [0, 0]
-    offset[0] = (mouse_coords[0] - girl_center_coords[0])*mousemove_K
-    offset[1] = (mouse_coords[1] - girl_center_coords[1])*mousemove_K
+    offset[0] = (mouse_coords[0] - girl_center_coords[0]) * mousemove_K
+    offset[1] = (mouse_coords[1] - girl_center_coords[1]) * mousemove_K
     girl.style.transform = `translate(${offset[0]}px, ${offset[1]}px)`
 
     // увеличение
@@ -93,7 +94,7 @@ window.onmousemove = function (event) {
     let r = Math.sqrt(Math.pow(mouse_coords[0] - girl_center_coords[0], 2) +
         Math.pow(mouse_coords[1] - girl_center_coords[1], 2))
 
-    let value = -1/2210 * r + 11/10
+    let value = -1 / 2210 * r + 11 / 10
     if (value < 1) {
         value = 1
     }
@@ -102,13 +103,11 @@ window.onmousemove = function (event) {
 }
 
 
-
 // stars
 function getRandomInt(max) {
     return Math.floor(Math.random() * max)
 }
 
-let k = [0,0,0]
 let stars_N = 700
 let home_stars = document.body.querySelector(".home_stars")
 
@@ -120,33 +119,14 @@ for (let i = 0; i < stars_classes.length; i++) {
 for (let i = 0; i < stars_N; i++) {
     let el = document.createElement("div")
     el.style.left = `${getRandomInt(maxes[0])}px`
-    el.style.top = `${getRandomInt(maxes[1]*3)}px`
+    el.style.top = `${getRandomInt(maxes[1] * 3)}px`
+
     if (i < stars_N * 0.07) {
         home_stars.append(el)
-        // el.classList.add(stars_classes[2])
         stars_classes[2].append(el)
-        k[0] += 1
     } else if (i < stars_N * 0.4) {
-        // el.classList.add(stars_classes[1])
         stars_classes[1].append(el)
-        k[1] += 1
     } else {
-        // el.classList.add(stars_classes[0])
         stars_classes[0].append(el)
-        k[2] += 1
-    }
-    // el.classList.add(stars_classes[getRandomInt(3)])
-}
-let stars = [[],[],[]]
-console.log(k)
-stars[0] = home_stars.querySelectorAll(".small_stars")
-stars[0] = home_stars.querySelectorAll(".medium_stars")
-stars[0] = home_stars.querySelectorAll(".large_stars")
-
-
-for (let j = 0; j < stars.length; j++) {
-    for (let i = 0; i < stars[j]; i++) {
-
     }
 }
-
