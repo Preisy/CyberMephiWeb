@@ -1,11 +1,79 @@
 .home_wrapper {
+    padding-bottom: 270px;
     padding-top: 100px;
     overflow: hidden;
+    position: relative;
 }
+
 .home {
     position: relative;
 }
 
+/*home stars*/
+.home_stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.home_stars div {
+    /*background-color: #38495a;*/
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 36%, rgba(38,43,57,1) 100%);
+    position: absolute;
+}
+.small_stars div {
+    /*background-color: #fff;*/
+    height: 1px;
+    width: 1px;
+}
+.small_stars {
+    animation: moving_stars 50s infinite;
+}
+.medium_stars div {
+    height: 2px;
+    width: 2px;
+    /*background-color: yellow;*/
+}
+.medium_stars {
+    animation: moving_stars 100s infinite;
+}
+.large_stars div {
+    height: 3px;
+    width: 3px;
+    transition: all 2s;
+    /*background-color: red;*/
+}
+.large_stars {
+    animation: moving_stars 150s infinite;
+}
+
+@keyframes moving_stars {
+    0% {
+        transform: translateY(0px)
+    }
+    100% {
+        transform: translateY(-1100px)
+    }
+    /*50% {*/
+    /*    transform: translateY(1100px)*/
+    /*}*/
+    /*100% {*/
+    /*    transform: translateY(0px)*/
+    /*}*/
+
+}
+
+
+
+
+
+
+
+
+/*home icon*/
 
 .home_background {
     position: absolute;
@@ -72,6 +140,7 @@
 }
 
 
+/*home text*/
 
 .home_text {
     text-align: center;
@@ -149,6 +218,7 @@
     padding: 0 110px;
     line-height: 59px;
     margin: 0 auto;
+    background-color: #262b39;
 }
 
 .home_text a:hover {
@@ -238,4 +308,3 @@
     transition: all 0.3s;
     left: 10px;
 }
-

@@ -33,7 +33,8 @@ addEL(".home p")
 let home = document.body.querySelector(".home_wrapper")
 
 let girl = document.body.querySelector(".home_background")
-girl.start_top = 100
+// girl.start_top = 100
+girl.start_top = 0
 girl.style.top = `${girl.start_top}px`
 let girl_K = 0.5
 
@@ -99,3 +100,53 @@ window.onmousemove = function (event) {
     // console.log(r)
     girl.children[0].style.transform = `scale(${value})`
 }
+
+
+
+// stars
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max)
+}
+
+let k = [0,0,0]
+let stars_N = 700
+let home_stars = document.body.querySelector(".home_stars")
+
+let maxes = [home_stars.offsetWidth, home_stars.offsetHeight]
+let stars_classes = ["small_stars", "medium_stars", "large_stars"]
+for (let i = 0; i < stars_classes.length; i++) {
+    stars_classes[i] = home_stars.querySelector(`.${stars_classes[i]}`)
+}
+for (let i = 0; i < stars_N; i++) {
+    let el = document.createElement("div")
+    el.style.left = `${getRandomInt(maxes[0])}px`
+    el.style.top = `${getRandomInt(maxes[1]*3)}px`
+    if (i < stars_N * 0.07) {
+        home_stars.append(el)
+        // el.classList.add(stars_classes[2])
+        stars_classes[2].append(el)
+        k[0] += 1
+    } else if (i < stars_N * 0.4) {
+        // el.classList.add(stars_classes[1])
+        stars_classes[1].append(el)
+        k[1] += 1
+    } else {
+        // el.classList.add(stars_classes[0])
+        stars_classes[0].append(el)
+        k[2] += 1
+    }
+    // el.classList.add(stars_classes[getRandomInt(3)])
+}
+let stars = [[],[],[]]
+console.log(k)
+stars[0] = home_stars.querySelectorAll(".small_stars")
+stars[0] = home_stars.querySelectorAll(".medium_stars")
+stars[0] = home_stars.querySelectorAll(".large_stars")
+
+
+for (let j = 0; j < stars.length; j++) {
+    for (let i = 0; i < stars[j]; i++) {
+
+    }
+}
+
