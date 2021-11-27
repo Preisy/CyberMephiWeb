@@ -131,3 +131,4 @@ for (let i = 0; i < stars_N; i++) {
     }
     // home_stars.append(el)
 }
+

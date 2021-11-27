@@ -112,10 +112,6 @@
     100% {
         transform: translateY(0px);
     }
-
-    /*100% {*/
-    /*    transform: translateY(0);*/
-    /*}*/
 }
 
 
@@ -132,6 +128,7 @@
     /*width: 50px;*/
     position: absolute;
     width: 100%;
+    /*transition: all 3000ms linear;*/
     /*animation: swimming infinite;*/
 }
 

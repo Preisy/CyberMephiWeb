@@ -111,6 +111,39 @@ window.addEventListener('scroll', function () {
 //
 
 
+let array = document.querySelectorAll('.clouds img');
+let range = 2;
+// array.forEach((el)=>{
+//     el.style.transform = "translateX(0px)";
+//     el.step = Math.ceil(Math.random() * range)
+// })
+// let interval = setInterval(swim, 50);
+//
+// function swim() {
+//     array.forEach((el) => {
+//         let posLeft = Number(getComputedStyle(el).transform.split(",")[4]);
+//         el.style.transform = `translateX(${posLeft - el.step}px)`;
+//         if (posLeft + parseInt(el.style.left) < -el.offsetWidth) {
+//             el.style.transform = `translateX(${el.offsetParent.offsetWidth + el.offsetWidth}px)`;
+//         }
+//     })
+// }
+array.forEach((el)=>{
+    // el.style.left = "0px"
+    el.step = Math.ceil(Math.random() * range);
+    // el.step = 50;
+})
+let interval = setInterval(swim, 10);
+function swim() {
+    array.forEach((el) => {
+        let posLeft = parseInt(getComputedStyle(el).left);
+        el.style.left = posLeft - el.step + 'px';
+        if (posLeft < -el.offsetWidth) {
+            el.style.left = el.offsetParent.offsetWidth + el.offsetWidth + 'px';
+        }
+    })
+}
+
 
 
 
