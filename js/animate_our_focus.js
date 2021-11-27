@@ -18,7 +18,7 @@ let our_focus = document.body.querySelector(".our_focus_wrapper")
 // clouds
 let clouds = document.querySelector('.clouds')
 
-let clouds_N = 20
+let clouds_N = 10
 let clouds_size = [90, 160]
 let min_duration = [100, 150]
 let max_duration = [150, 200]
