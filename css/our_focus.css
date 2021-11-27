@@ -100,8 +100,32 @@
     top: 230px;
 }
 
+
+.clouds {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
 .clouds img {
     /*height: 50px;*/
     /*width: 50px;*/
     position: absolute;
+    width: 100%;
+    /*animation: swimming infinite;*/
 }
+
+/*@keyframes aaaa {*/
+/*    */
+/*}*/
+@keyframes swimming {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+

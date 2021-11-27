@@ -27,22 +27,22 @@
             </cc:License>
         </rdf:RDF>
     </metadata>
-<!--    <defs id="defs57">-->
-<!--        <pattern y="0" x="0" height="6" width="6" patternUnits="userSpaceOnUse" id="EMFhbasepattern"/>-->
-<!--        <linearGradient inkscape:collect="always" xlink:href="#linearGradient1070" id="linearGradient1072" x1="-108.90347" y1="2124.834" x2="-1137.1982" y2="2110.6506" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.07740541,0,0,0.07740541,88.373952,-128.02586)"/>-->
-<!--        <linearGradient inkscape:collect="always" id="linearGradient1070">-->
-<!--            <stop style="stop-color:#8b8e9b;stop-opacity:1" offset="0" id="stop1066"/>-->
-<!--            <stop style="stop-color:#8b8e9b;stop-opacity:1" offset="1" id="stop1068"/>-->
-<!--        </linearGradient>-->
-<!--    </defs>-->
     <defs id="defs57">
         <pattern y="0" x="0" height="6" width="6" patternUnits="userSpaceOnUse" id="EMFhbasepattern"/>
         <linearGradient inkscape:collect="always" xlink:href="#linearGradient1070" id="linearGradient1072" x1="-108.90347" y1="2124.834" x2="-1137.1982" y2="2110.6506" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.07740541,0,0,0.07740541,88.373952,-128.02586)"/>
         <linearGradient inkscape:collect="always" id="linearGradient1070">
-            <stop style="stop-color:#3e82f4;stop-opacity:1" offset="0" id="stop1066"/>
+            <stop style="stop-color:#3568FF;stop-opacity:1" offset="0" id="stop1066"/>
             <stop style="stop-color:#93dcf7;stop-opacity:1" offset="1" id="stop1068"/>
         </linearGradient>
     </defs>
+<!--    <defs id="defs57">-->
+<!--        <pattern y="0" x="0" height="6" width="6" patternUnits="userSpaceOnUse" id="EMFhbasepattern"/>-->
+<!--        <linearGradient inkscape:collect="always" xlink:href="#linearGradient1070" id="linearGradient1072" x1="-108.90347" y1="2124.834" x2="-1137.1982" y2="2110.6506" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.07740541,0,0,0.07740541,88.373952,-128.02586)"/>-->
+<!--        <linearGradient inkscape:collect="always" id="linearGradient1070">-->
+<!--            <stop style="stop-color:#3e82f4;stop-opacity:1" offset="0" id="stop1066"/>-->
+<!--            <stop style="stop-color:#93dcf7;stop-opacity:1" offset="1" id="stop1068"/>-->
+<!--        </linearGradient>-->
+<!--    </defs>-->
     <sodipodi:namedview inkscape:window-height="705" inkscape:window-width="1366" inkscape:pageshadow="2" inkscape:pageopacity="0" guidetolerance="1" gridtolerance="1" objecttolerance="1" borderopacity="1.0" bordercolor="#666666" pagecolor="#ffffff" id="base" inkscape:zoom="1" inkscape:cx="75.838607" inkscape:cy="36.711673" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:current-layer="svg2" showgrid="false" showguides="false" inkscape:showpageshadow="false" units="px" inkscape:window-maximized="1"/>
     <g id="#ffffffff" transform="translate(0,-1089)"/>
     <g id="#2acbffff-4" transform="matrix(0.74035173,0,0,0.75447038,-840.95699,-775.15387)" style="fill:#00ff00"/>

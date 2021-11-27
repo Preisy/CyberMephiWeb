@@ -104,8 +104,8 @@ window.onmousemove = function (event) {
 
 
 // stars
-function getRandomInt(max) {
-    return Math.floor(Math.random() * max)
+function getRandomInt(min, max) {
+    return min + Math.floor(Math.random() * (max- min))
 }
 
 // let stars_N = 700
@@ -119,8 +119,8 @@ for (let i = 0; i < stars_classes.length; i++) {
 }
 for (let i = 0; i < stars_N; i++) {
     let el = document.createElement("div")
-    el.style.left = `${getRandomInt(maxes[0])}px`
-    el.style.top = `${getRandomInt(maxes[1] * 3)}px`
+    el.style.left = `${getRandomInt(0, maxes[0])}px`
+    el.style.top = `${getRandomInt(0, maxes[1] * 3)}px`
 
     if (i < stars_N * 0.07) {
         stars_classes[2].append(el)
