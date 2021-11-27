@@ -131,9 +131,9 @@ let range = 2;
 array.forEach((el)=>{
     // el.style.left = "0px"
     el.step = Math.ceil(Math.random() * range);
-    // el.step = 50;
+    // el.step = 2;
 })
-let interval = setInterval(swim, 10);
+let interval = setInterval(swim, 20);
 function swim() {
     array.forEach((el) => {
         let posLeft = parseInt(getComputedStyle(el).left);
