@@ -7,7 +7,7 @@ function addEL(str) {
     let arr = []
     for (let i = 0; i < h_arr.length; i++) {
         let span = document.createElement("span")
-        if (h_arr[i] == " ") {
+        if (h_arr[i] === " ") {
             span.innerHTML = "&nbsp;"
         } else {
             span.innerText = h_arr[i]
@@ -48,7 +48,7 @@ let icon_K = 0.2
 text_arr = document.querySelectorAll(".home_text div ~ *")
 let K_arr = [0.4, 0.3, 0.2, 0.15]
 let text_K = 0.5
-window.onscroll = function () {
+window.addEventListener('scroll',  function () {
     if (home.getBoundingClientRect().bottom < 0) {
         return
     }
@@ -61,7 +61,7 @@ window.onscroll = function () {
         text_arr[i].style.transform = `translateX(${window.scrollY * text_K * K_arr[i]}px)`
     }
     // home_icon.style.transform = `translateY(px)`
-}
+})
 
 
 // следование девочки за мышкой и увеличение ее
@@ -108,7 +108,8 @@ function getRandomInt(max) {
     return Math.floor(Math.random() * max)
 }
 
-let stars_N = 700
+// let stars_N = 700
+let stars_N = 1000
 let home_stars = document.body.querySelector(".home_stars")
 
 let maxes = [home_stars.offsetWidth, home_stars.offsetHeight]
@@ -122,11 +123,11 @@ for (let i = 0; i < stars_N; i++) {
     el.style.top = `${getRandomInt(maxes[1] * 3)}px`
 
     if (i < stars_N * 0.07) {
-        home_stars.append(el)
         stars_classes[2].append(el)
     } else if (i < stars_N * 0.4) {
         stars_classes[1].append(el)
     } else {
         stars_classes[0].append(el)
     }
+    // home_stars.append(el)
 }

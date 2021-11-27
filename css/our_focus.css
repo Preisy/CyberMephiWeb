@@ -1,0 +1,107 @@
+
+.our_focus {
+    /*height: 1000px;*/
+    overflow: hidden;
+    position: relative;
+}
+.our_focus img {
+    /*position: fixed;*/
+    /*top: 300px;*/
+    height: 400px;
+    display: block;
+}
+.our_focus_text {
+    float: left;
+    /*position: absolute;*/
+}
+
+.our_focus h2 {
+    margin-bottom: 30px;
+}
+
+.our_focus h2 span {
+    display: inline-block;
+    transition: all 0.4s;
+}
+.our_focus h2 span:hover {
+    color: #3568FF;
+}
+
+
+.our_focus_table {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 20px;
+    width: 630px;
+    background-color: #ffffffc2;
+    border-radius: 18px;
+
+    /*display: flex;*/
+}
+.our_focus_table .line {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+.our_focus_cell {
+    /*outline: 2px solid #8b8e9b;*/
+    border-radius: 18px;
+    /*margin: 0 10px;*/
+    /*height: 200px;*/
+    width: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: none;
+    transform: translateY(0px);
+    transition: all 0.1s ease-in-out;
+}
+.our_focus_cell:hover {
+    -webkit-box-shadow: 0 0 16px 0 rgba(38, 43, 57, 0.2);
+    -moz-box-shadow: 0 0 16px 0 rgba(38, 43, 57, 0.2);
+    box-shadow: 0 0 16px 0 rgba(38, 43, 57, 0.2);
+    transform: translateY(-7px);
+}
+.our_focus_cell h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.our_focus_cell img {
+    /*width: 188px;*/
+    filter: grayscale(100%);
+    height: 130px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    transition: all 0.15s ease-in-out;
+}
+.our_focus_cell:hover img {
+    filter: grayscale(0%);
+}
+
+
+/*.our_focus ul {*/
+/*    list-style: none;*/
+/*}*/
+
+/*.our_focus ul li {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-style: normal;*/
+/*    font-weight: bold;*/
+/*    margin-bottom: 20px;*/
+/*    line-height: 20px;*/
+/*}*/
+
+.our_focus_background {
+    position: absolute;
+    right: 0;
+    top: 230px;
+}
+
+.clouds img {
+    /*height: 50px;*/
+    /*width: 50px;*/
+    position: absolute;
+}

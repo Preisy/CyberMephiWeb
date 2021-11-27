@@ -1,9 +1,10 @@
 /*font-family: 'Montserrat', sans-serif;*/
 
 .structure {
-    padding: 180px 10%;
+    padding: 100px 10%;
+    /*padding-top: 90px;*/
     box-sizing: border-box;
-    text-align: center;
+    position: relative;
 }
 
 .white {
@@ -12,7 +13,6 @@
 }
 .black {
     background: #262b39;
-    background: linear-gradient(360deg, rgb(50 60 88) 0%, rgba(38,43,57,1) 23%)
 }
 
 
@@ -56,6 +56,25 @@
 }
 
 
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+h1 {
+    font-size: 84px;
+    line-height: 102px;
+}
+h2 {
+    font-size: 72px;
+    line-height: 88px;
+}
+.white {
+    color: #262b39;
+}
+.black {
+    color: #E1EDFF;
+}
 
 
 .clearfix:after {
@@ -63,8 +82,32 @@
     display: block;
     clear: both;
 }
+* {
+    /*color: #E1EDFF !important;*/
+}
 
+.pull_ding_dong {
+    animation: pull-ding-dong 0.7s;
+}
 
+@keyframes pull-ding-dong {
+    0% {
+        transform: translateY(0px);
+    }
+    30% {
+        transform: translateY(-15px);
+    }
+    55% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-7px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+
+}
 
 
 /*wave*/
@@ -80,13 +123,18 @@
         transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
+.home_wrapper .waveWrapper {
+    bottom: 0;
+}
+.top_wave .waveWrapper {
+    top: 0;
+    transform: rotate(180deg);
+}
 .waveWrapper {
     overflow: hidden;
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0;
-    /*top: 0;*/
     height: 120px;
     margin: auto;
 }
