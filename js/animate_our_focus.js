@@ -48,9 +48,6 @@ for (let i = 0; i < clouds_N; i++) {
 
 
 
-
-
-
 // parallax
 
 let our_focus_icon = document.body.querySelector(".our_focus_background")
@@ -58,7 +55,7 @@ our_focus_icon.start_top = 0
 our_focus_icon.style.top = `${our_focus_icon.start_top}px`
 let our_focus_icon_K = 0.2
 window.addEventListener('scroll', function () {
-    if (!visible(our_focus)) {
+    if (!visible(our_focus_icon)) {
         return false
     }
 
@@ -69,73 +66,21 @@ window.addEventListener('scroll', function () {
 
 
 
-
-
-// следование девочки за мышкой и увеличение ее
-
-// let mousemove_K = 0.03
-// window.onmousemove = function (event) {
-//     // следование
-//     // if (home.getBoundingClientRect().bottom < 0) {
-//     //     return
-//     // }
-//
-//     let mouse_coords = [event.clientX, event.clientY]
-//
-//     let girl_center_coords = [0, 0]
-//     let girl_client_rect = girl.getBoundingClientRect()
-//     girl_center_coords[0] = (girl_client_rect.right - girl_client_rect.left) / 2 + girl_client_rect.left
-//     girl_center_coords[1] = (girl_client_rect.bottom - girl_client_rect.top) / 2 + girl_client_rect.top
-//
-//     let offset = [0, 0]
-//     offset[0] = (mouse_coords[0] - girl_center_coords[0]) * mousemove_K
-//     offset[1] = (mouse_coords[1] - girl_center_coords[1]) * mousemove_K
-//     girl.style.transform = `translate(${offset[0]}px, ${offset[1]}px)`
-//
-//     // увеличение
-//     girl_coords = [girl_client_rect.top + 95,
-//         girl_client_rect.right,
-//         girl_client_rect.bottom,
-//         girl_client_rect.left]
-//
-//     let r = Math.sqrt(Math.pow(mouse_coords[0] - girl_center_coords[0], 2) +
-//         Math.pow(mouse_coords[1] - girl_center_coords[1], 2))
-//
-//     let value = -1 / 2210 * r + 11 / 10
-//     if (value < 1) {
-//         value = 1
-//     }
-//     // console.log(r)
-//     girl.children[0].style.transform = `scale(${value})`
-// }
-//
-
-
 let array = document.querySelectorAll('.clouds img');
 let range = 2;
-// array.forEach((el)=>{
-//     el.style.transform = "translateX(0px)";
-//     el.step = Math.ceil(Math.random() * range)
-// })
-// let interval = setInterval(swim, 50);
-//
-// function swim() {
-//     array.forEach((el) => {
-//         let posLeft = Number(getComputedStyle(el).transform.split(",")[4]);
-//         el.style.transform = `translateX(${posLeft - el.step}px)`;
-//         if (posLeft + parseInt(el.style.left) < -el.offsetWidth) {
-//             el.style.transform = `translateX(${el.offsetParent.offsetWidth + el.offsetWidth}px)`;
-//         }
-//     })
-// }
+
 array.forEach((el)=>{
-    // el.style.left = "0px"
     el.step = Math.ceil(Math.random() * range);
-    // el.step = 2;
 })
 let interval = setInterval(swim, 20);
 function swim() {
+    if (!visible(our_focus)) {
+        return
+    }
     array.forEach((el) => {
+        if (!visible(el)) {
+            return false
+        }
         let posLeft = parseInt(getComputedStyle(el).left);
         el.style.left = posLeft - el.step + 'px';
         if (posLeft < -el.offsetWidth) {

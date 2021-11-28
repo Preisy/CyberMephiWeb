@@ -55,9 +55,14 @@ window.addEventListener('scroll',  function () {
     // el.getBoundingClientRect().top
     girl.style.top = `${girl.start_top + window.scrollY * girl_K}px`
 
-    home_icon.style.transform = `translateY(${-window.scrollY * icon_K}px)`
+    if (visible(home_icon)) {
+        home_icon.style.transform = `translateY(${-window.scrollY * icon_K}px)`
+    }
 
     for (let i = 0; i < text_arr.length; i++) {
+        if (!visible(text_arr[i])) {
+            continue
+        }
         text_arr[i].style.transform = `translateX(${window.scrollY * text_K * K_arr[i]}px)`
     }
     // home_icon.style.transform = `translateY(px)`

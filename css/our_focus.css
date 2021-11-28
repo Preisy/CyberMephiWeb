@@ -1,14 +1,8 @@
 
 .our_focus {
     /*height: 1000px;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
-}
-.our_focus img {
-    /*position: fixed;*/
-    /*top: 300px;*/
-    height: 400px;
-    display: block;
 }
 .our_focus_text {
     float: left;
@@ -96,11 +90,13 @@
 
 .our_focus_background {
     position: absolute;
-    right: 0;
+    right: -20px;
     top: 230px;
 }
 .our_focus_background img {
     animation: flying 5s infinite ease-in-out;
+    height: 360px;
+    display: block;
 }
 @keyframes flying {
     0% {
