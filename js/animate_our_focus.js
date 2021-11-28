@@ -65,7 +65,6 @@ window.addEventListener('scroll', function () {
 
 
 
-
 let array = document.querySelectorAll('.clouds img');
 let range = 2;
 

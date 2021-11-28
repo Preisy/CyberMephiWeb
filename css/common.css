@@ -1,4 +1,7 @@
 /*font-family: 'Montserrat', sans-serif;*/
+img {
+    user-select: none;
+}
 
 .structure {
     padding: 100px 10%;
@@ -17,6 +20,7 @@
 
 
 .scroll_down {
+    user-select: none;
     position: absolute;
     bottom: -164px;
     left: 50%;
