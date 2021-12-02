@@ -32,7 +32,7 @@ header ul, li {
 }
 /*header li {*/
 /*}*/
-header li {
+header li a {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -46,7 +46,7 @@ header li {
 
     transition: all 0.3s;
 }
-header li:hover {
+header li a:hover {
     color: #3568FF
 }
 /*header li*/
