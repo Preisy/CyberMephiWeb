@@ -268,7 +268,7 @@
 .home_text .sign_in:after,
 .home_text .sign_up:after {
     content: '';
-    background: url(../svg/lk.svg) no-repeat;
+    background: url(../../svg/lk.svg) no-repeat;
     background-size: 33px;
     background-position: center;
     height: 100%;

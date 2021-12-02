@@ -28,18 +28,28 @@ header ul {
 
 header ul, li {
     list-style: none;
+    float: left;
 }
-header li {
+/*header li {*/
+/*}*/
+header li a {
+    display: inline-block;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 17px;
     line-height: 29px;
     color: #fff;
-
-    float: left;
+    text-decoration: none;
+    /*float: left;*/
     padding: 18px 10px;
+
+    transition: all 0.3s;
 }
+header li a:hover {
+    color: #3568FF
+}
+/*header li*/
 header .icon {
     float: right;
     /*padding: 20px;*/

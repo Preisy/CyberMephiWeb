@@ -19,8 +19,10 @@
 }
 .about_us_background .mobile_icon {
     /*float: left;*/
+    height: 250px;
 }
 .about_us_background .desktop_icon {
     /*float: right;*/
-    left: 150px;
+    left: 130px;
+    height: 266px
 }
