@@ -1,0 +1,26 @@
+.about_us p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+}
+.about_us {
+    position: relative;
+}
+
+.about_us_text {
+    width: 700px;
+    float: right;
+}
+.about_us_background img {
+    display: block;
+    position: absolute;
+}
+.about_us_background .mobile_icon {
+    /*float: left;*/
+}
+.about_us_background .desktop_icon {
+    /*float: right;*/
+    left: 150px;
+}

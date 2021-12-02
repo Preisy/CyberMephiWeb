@@ -12,9 +12,12 @@ img {
 
 .white {
     /*background-color: #E1EDFF;*/
+    padding-top: 100px;
     background-color: #fff;
 }
 .black {
+    padding-top: 230px;
+    padding-bottom: 230px;
     background: #262b39;
 }
 
@@ -60,7 +63,7 @@ img {
 }
 
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -72,6 +75,11 @@ h1 {
 h2 {
     font-size: 72px;
     line-height: 88px;
+}
+h3 {
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 25px;
 }
 .white {
     color: #262b39;
@@ -127,10 +135,10 @@ h2 {
         transform: translateX(-50%) translateZ(0) scaleY(1)
     }
 }
-.home_wrapper .waveWrapper {
+.waveWrapper.bottomWave {
     bottom: 0;
 }
-.top_wave .waveWrapper {
+.waveWrapper.topWave {
     top: 0;
     transform: rotate(180deg);
 }
