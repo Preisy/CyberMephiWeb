@@ -1,6 +1,7 @@
 function changeContent(main, el) {
     main.style.opacity = 0
     let node = el.querySelector("main")
+    appendStyles(document.querySelector("head"), el)
     setTimeout(function () {
         let arr = main.children
         for (let i = 0; i < arr.length; i++) {
@@ -11,7 +12,7 @@ function changeContent(main, el) {
             main.append(arr[i])
         }
 
-        appendStylesAndScripts(document.querySelector("head"), el)
+        appendScripts(document.querySelector("head"), el)
         main.style.opacity = 1
 
     }, 150)
@@ -25,7 +26,7 @@ function checkAvailability(arr, el, checker) {
     return false
 }
 
-function appendStylesAndScripts(head, el) {
+function appendStyles(head, el) {
     let new_tags = el.head.querySelectorAll("link")
     let tags = head.querySelectorAll("link")
     for (let i = 0; i < new_tags.length; i++) {
@@ -33,7 +34,8 @@ function appendStylesAndScripts(head, el) {
             head.append(new_tags[i])
         }
     }
-
+}
+function appendScripts(head, el) {
     new_tags = el.head.querySelectorAll("script")
     tags = head.querySelectorAll("script")
 
