@@ -81,6 +81,9 @@ function processHeaderLinks() {
     let main = document.querySelector("main")
 
     let li = document.querySelectorAll("header li a")
+    // for (let i = 0; i < arr.length; i++) {
+    //     li.(arr[i])
+    // }
 
     for (let i = 0; i < li.length; i++) {
         li[i].addEventListener("click", async function (event) {
@@ -88,7 +91,14 @@ function processHeaderLinks() {
             obj = {
                 url: li[i].href,
                 title: li[i].title,
-                file: li[i].getAttribute("href")
+                file: li[i].getAttribute("data-href")
+            }
+            if (li[i].href == null) {
+                obj = {
+                    url: li[i].dataset.href,
+                    title: li[i].title,
+                    file: li[i].dataset.href
+                }
             }
 
             current_href = new URL(
