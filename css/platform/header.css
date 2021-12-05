@@ -175,11 +175,12 @@ header li a:hover {
     margin-bottom: 18px;
 }
 .searcher .lecture .video_preview {
-    height: 111px;
-    width: 168px;
-
     background-color: #000;
     margin-right: 20px;
+}
+.searcher .lecture .video_preview img {
+    width: 168px;
+
 }
 .searcher .lecture .lecture_text {
     width: 67%;

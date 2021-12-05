@@ -39,7 +39,7 @@
 .course {
     background-color: #E1EDFF;
     border-radius: 15px;
-    width: 340px;
+    width: 330px;
     height: 170px;
 
     padding: 18px;
@@ -63,6 +63,7 @@
     /*line-height: 24px;*/
 
     color: #1A2030;
+    width: 210px;
 }
 
 .course .course_icon {

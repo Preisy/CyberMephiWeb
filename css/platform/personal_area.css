@@ -63,12 +63,14 @@
     transform: translateY(10px) !important;
 }
 .personal_area .lecture .video_preview {
-    height: 111px;
-    width: 168px;
-
     background-color: #000;
     margin-right: 20px;
 }
+.personal_area .lecture .video_preview img {
+    width: 168px;
+
+}
+
 .personal_area .lecture .lecture_text {
     width: 67%;
 }

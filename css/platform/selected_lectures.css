@@ -25,11 +25,12 @@
     transform: translateY(10px) !important;
 }
 .selected_lectures .lecture .video_preview {
-    height: 111px;
-    width: 168px;
-
     background-color: #000;
     margin-right: 20px;
+}
+.selected_lectures .lecture .video_preview img {
+    width: 168px;
+
 }
 .selected_lectures .lecture .lecture_text {
     width: 67%;

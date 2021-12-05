@@ -81,9 +81,6 @@ function processHeaderLinks() {
     let main = document.querySelector("main")
 
     let li = document.querySelectorAll("header li a")
-    // for (let i = 0; i < arr.length; i++) {
-    //     li.(arr[i])
-    // }
 
     for (let i = 0; i < li.length; i++) {
         li[i].addEventListener("click", async function (event) {
