@@ -1,8 +1,46 @@
-.selected_lectures h3 {
-    margin-bottom: 40px;
+.user {
+    display: flex;
+    margin-bottom: 50px;
 }
 
-.selected_lectures .lecture {
+.personal_area .user img {
+    margin-right: 43px;
+    height: 150px;
+}
+
+.user p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #E1EDFF;
+}
+.user h5 {
+    margin-bottom: 18px;
+}
+.user p:not(.progress_text) {
+    margin-bottom: 31px;
+}
+.user .progress_text {
+    margin-bottom: 11px;
+}
+
+.user .progress_bar {
+    background-color: #3568FF;
+    height: 10px;
+    width: 100%;
+    display: inline-block;
+}
+.user .completed {
+    margin-top: -2px;
+    background-color: #F45196;
+    height: 14px;
+    width: 40%;
+}
+
+.personal_area .lecture {
     background-color: #E1EDFF;
     border-radius: 15px;
     padding: 18px;
@@ -17,28 +55,28 @@
     cursor: pointer;
 }
 
-.selected_lectures .lecture:hover {
+.personal_area .lecture:hover {
     transform: translateY(-5px);
     outline: 4px solid #3568FF;
 }
-.selected_lectures .lecture:active {
+.personal_area .lecture:active {
     transform: translateY(10px) !important;
 }
-.selected_lectures .lecture .video_preview {
+.personal_area .lecture .video_preview {
     height: 111px;
     width: 168px;
 
     background-color: #000;
     margin-right: 20px;
 }
-.selected_lectures .lecture .lecture_text {
+.personal_area .lecture .lecture_text {
     width: 67%;
 }
-.selected_lectures .lecture h6 {
+.personal_area .lecture h6 {
     margin-bottom: 6px;
     color: #000000;
 }
-.selected_lectures .lecture span {
+.personal_area .lecture span {
     background-color: #3568FF;
     border-radius: 15px;
     font-family: 'Montserrat', sans-serif;
@@ -56,11 +94,11 @@
     display: inline-block;
 
 }
-.selected_lectures .lecture span.first {
+.personal_area .lecture span.first {
     margin-right: 25px;
 }
 
-.selected_lectures .lecture p {
+.personal_area .lecture p {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -70,20 +108,24 @@
     width: 84%;
 }
 
-.selected_lectures .lecture .rating_stars {
+.personal_area .lecture .rating_stars {
     position: absolute;
     bottom: 15px;
     right: 18px;
 }
-.selected_lectures .lecture .rating_stars img {
+.personal_area .lecture .rating_stars img {
     height: 30px;
 }
-.selected_lectures .lecture .favorite_icon img {
+.personal_area .lecture .favorite_icon img {
     height: 30px;
 }
 
-.selected_lectures .lecture .favorite_icon {
+.personal_area .lecture .favorite_icon {
     position: absolute;
     top: 15px;
     right: 18px;
+}
+
+.recently_viewed h5 {
+    margin-bottom: 25px;
 }

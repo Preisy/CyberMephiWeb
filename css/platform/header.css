@@ -9,25 +9,39 @@
     -webkit-box-shadow: 1px 3px 8px 0px rgba(255, 255, 255, 0.2);
     -moz-box-shadow: 1px 3px 8px 0px rgba(255, 255, 255, 0.2);
     box-shadow: 1px 3px 8px 0px rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    justify-content: space-between;
 }
-header .logo {
-    float: left;
+/*header .logo {*/
+/*    float: left;*/
+/*}*/
+.header nav {
+    /*width: 100%;*/
+    /*text-align: right;*/
 }
-.logo svg {
+.logo {
+    /*float: right;*/
+}
+.logo img {
     height: 64px;
+    cursor: pointer;
     /*height: 10px;*/
 }
-header nav {
-    float: right;
-}
+/*header nav {*/
+/*    float: right;*/
+/*}*/
 
-header ul {
-    float: left;
+header nav {
+    /*float: right;*/
+    width: 100%;
     clear: both;
     position: relative;
 }
-
-header ul, li {
+.header ul {
+    float: right;
+}
+header li {
     list-style: none;
     float: left;
 }
@@ -51,12 +65,195 @@ header li a:hover {
     color: #3568FF
 }
 /*header li*/
-header .icon {
-    float: right;
-    /*padding: 20px;*/
-}
-.icon svg {
+
+.icon img {
     /*height: 33px;*/
     height: 28px;
     padding: 18px 0;
+    margin-left: 10px;
+    cursor: pointer;
 }
+
+
+
+
+.searcher .icon img {
+    cursor: pointer;
+}
+.searcher {
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1a203057;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-100px);
+}
+.active_search {
+    transform: translateY(0);
+}
+.searcher .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searcher ~ main,
+.searcher ~ header {
+    filter: blur(0);
+}
+.active_search ~ main,
+ .active_search ~ header {
+     filter: blur(4px);
+ }
+.searcher .search_field {
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+    /*display: block;*/
+    position: relative;
+}
+.searcher .search_field input {
+    width: 100%;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 8px 4px rgba(225, 237, 255, 0.2);
+    -moz-box-shadow: 0px 0px 8px 4px rgba(225, 237, 255, 0.2);
+    box-shadow: 0px 0px 8px 4px rgba(225, 237, 255, 0.2);
+    background-color: #1A2030;
+    color: #E1EDFF;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 3px 10px;
+    padding-left: 30px;
+    box-sizing: border-box;
+
+    transition: all 0.4s ease-in-out;
+    display: block;
+}
+.searcher .search_field input:focus {
+    -webkit-box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.36);
+    -moz-box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.36);
+    box-shadow: 0px 0px 8px 3px rgba(255, 255, 255, 0.36);
+}
+.searcher .search_field:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 31px;
+    background: url(../../svg/Search.svg) no-repeat;
+    background-size: 18px;
+    height: 22px;
+    width: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.search_results {
+    padding-top: 100px;
+}
+.search_results h5 {
+    color: #E1EDFF;
+    margin-bottom: 25px;
+}
+
+.searcher .lecture {
+    background-color: #E1EDFF;
+    border-radius: 15px;
+    padding: 18px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    margin-bottom: 18px;
+}
+.searcher .lecture .video_preview {
+    height: 111px;
+    width: 168px;
+
+    background-color: #000;
+    margin-right: 20px;
+}
+.searcher .lecture .lecture_text {
+    width: 67%;
+}
+.searcher .lecture h6 {
+    margin-bottom: 6px;
+    color: #000000;
+}
+.searcher .lecture span {
+    background-color: #3568FF;
+    border-radius: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #E1EDFF;
+
+    margin-bottom: 9px;
+    padding: 0px 9px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+.searcher .lecture span.first {
+    margin-right: 25px;
+}
+
+.searcher .lecture p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 24px;
+    color: #000000;
+    width: 84%;
+}
+
+.searcher .lecture .rating_stars {
+    position: absolute;
+    bottom: 15px;
+    right: 18px;
+}
+.searcher .lecture .rating_stars img {
+    height: 30px;
+}
+.searcher .lecture .favorite_icon img {
+    height: 30px;
+}
+
+.searcher .lecture .favorite_icon {
+    position: absolute;
+    top: 15px;
+    right: 18px;
+}
+
+/*.search_bar div {*/
+/*    display: inline-block;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -45,6 +45,17 @@
     padding: 18px;
     box-sizing: border-box;
     position: relative;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0);
+    cursor: pointer;
+}
+
+.course:hover {
+    transform: translateY(-5px);
+    outline: 4px solid #3568FF;
+}
+.course:active {
+    transform: translateY(10px) !important;
 }
 
 .course h5 {
@@ -71,6 +82,7 @@
 
 .catalog .slider {
     display: flex;
+    padding-top: 15px;
 
     transition: all 0.5s ease-in-out;
 }
