@@ -91,14 +91,7 @@ function processHeaderLinks() {
             obj = {
                 url: li[i].href,
                 title: li[i].title,
-                file: li[i].getAttribute("data-href")
-            }
-            if (li[i].href == null) {
-                obj = {
-                    url: li[i].dataset.href,
-                    title: li[i].title,
-                    file: li[i].dataset.href
-                }
+                file: li[i].getAttribute("href")
             }
 
             current_href = new URL(
