@@ -60,7 +60,8 @@
 }
 .our_focus_cell h3 {
     font-size: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
+    line-height: 29px;
 }
 .our_focus_cell img {
     /*width: 188px;*/
